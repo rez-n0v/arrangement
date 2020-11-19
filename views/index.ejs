@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arrangements</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Ubuntu:wght@300;400;500&family=Work+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- js -->
+    <script src="/js/script.js" defer></script>
+    <!-- favicon -->
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+    <header class="navbar">
+        <h1 class="navbar-title">Arrangements</h1>
+        <div class="navbar-buttons">
+            <a class="active" href="#">Home</a>
+            <a href="#">How To</a>
+            <a href="#">About</a>
+        </div>
+        <span class="nav-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+
+        <div class="time-table">
+            <div class="upload-tt">
+                <h2>Upload the excel file below..</h2>
+                <form action="">
+                    <input type="file" class="real-upload-btn" accept=".xlsx, .xls, .csv" hidden="hidden">
+                    <span class="upload-btn-txt">
+                        <a>Select a file... </a>
+                        <button class="temp-upload-btn" type="button">Choose a file</button>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="odd">       
+        <div class="mark-absent">
+            <div class="absentees">
+                <ul class="absent-teachers">
+
+                </ul>
+                <input type="text" placeholder="Enter Teacher's Name">
+                <span class="submit-btn">+</span>
+            </div>
+            <button class="make-arrangements">Make Arrangements <i class="fa fa-arrow-circle-right fa-lg"></i></button>
+        </div>
+    </section>
+
+    <footer>
+        © Copyright 2020, All Rights Reserved
+    </footer>
+</body>
+
+
+</html>
