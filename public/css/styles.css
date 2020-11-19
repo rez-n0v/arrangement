@@ -257,3 +257,69 @@ section.odd {
     background-color: white;
     color: black;
 }
+
+/**************************************************************************************/
+/************************************ARRANGEMENT TABLE*********************************/
+/**************************************************************************************/
+
+.arrangement-page {
+    text-align: center;
+}
+
+.arrangement-page h1 {
+    padding-top: 30px;
+}
+
+.arrangement-table, .arrangement-table th, .arrangement-table tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.arrangement-table {
+    margin: 20px auto;
+}
+
+.arrangement-table th, .arrangement-table tr td {
+    min-width: 80px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.arrangement-table th {
+    line-height: 50px;
+    font-size: 24px;
+}
+
+.arrangement-table tr td {
+    padding: 10px 0;
+}
+
+.print-button, .close-button {
+    margin: 20px;
+    border: 3px solid black;
+    background-color: white;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: black;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.print-button:hover, .close-button:hover {
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+}
+
+@media print {
+    @page {
+        size: landscape
+    }
+    
+    .print-button, .close-button {
+        display: none;
+    }
+}
