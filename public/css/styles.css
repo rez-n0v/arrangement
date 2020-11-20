@@ -377,3 +377,73 @@ section.odd {
     color: white;
 }
 
+
+/**************************************************************************************/
+/************************************ABOUT ME*********************************/
+/**************************************************************************************/
+
+.project-info {
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-info h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.project-info p {
+    font-size: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+section p {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 20px;
+    padding: 40px 10px 20px 10px;
+}
+
+section.even {
+    background-color: black;
+    color: white;
+}
+
+section img {
+    max-width: 750px;
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.even+footer {
+    color: white;
+    background: black;
+}
+
+.try-it {
+    margin: 30px;
+    margin-top: 50px;
+    border: 3px solid white;
+    background-color: white;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: black;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.try-it:hover {
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+}

@@ -25,11 +25,19 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
+app.get('/howto', (req, res) => {
+    res.render('howto');
+});
+
 let results;
 app.get('/arrangement', (req, res) => {
     res.render('arrangement', {
         data: results,
     });
+});
+
+app.get('*', (req, res) => {
+    res.render('index');
 });
 
 app.post('/arrangement', (req, res) => {
