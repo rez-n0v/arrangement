@@ -452,3 +452,34 @@ section img {
     text-decoration: none;
     color: inherit;
 }
+
+
+@media (max-width: 450px) {
+    .navbar-title {
+        font-size: 32px;
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
+    .upload-tt {
+        width: 85%;
+    }
+
+    .absentees {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar {
+        height: max-content;
+    }
+
+    .my-image img {
+        padding-bottom: 20px;
+    }
+
+    .time-table {
+        padding-bottom: 30px;
+    }
+}
