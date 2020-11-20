@@ -36,10 +36,6 @@ app.get('/arrangement', (req, res) => {
     });
 });
 
-app.get('*', (req, res) => {
-    res.render('index');
-});
-
 app.post('/arrangement', (req, res) => {
     // console.log(typeof req.body);
     makeArrangements(req.body, (error, data) => {
@@ -50,6 +46,10 @@ app.post('/arrangement', (req, res) => {
         results = data;
     });
 });
+
+app.get('*', (req, res) => {
+    res.end('404: PAGE NOT FOUND');
+})
 
 app.listen(port, () => {
     console.log(`Server Running at http://localhost:${port}`);
