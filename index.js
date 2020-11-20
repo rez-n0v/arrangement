@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
 let results;
 app.get('/arrangement', (req, res) => {
     res.render('arrangement', {

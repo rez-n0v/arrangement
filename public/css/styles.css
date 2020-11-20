@@ -14,6 +14,11 @@ h1 {
     padding: 0;
 }
 
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 footer {
     text-align: center;
     padding: 30px 0 20px 0;
@@ -56,7 +61,7 @@ footer {
     text-decoration: none;
 }
 
-.navbar-buttons a.active, a:hover {
+.navbar-buttons a.active, .navbar-buttons a:hover {
     border: 1px solid white;
     transition: 0.5s;
 }
@@ -316,10 +321,59 @@ section.odd {
 
 @media print {
     @page {
-        size: landscape
+        size: landscape;
     }
-    
+
     .print-button, .close-button {
         display: none;
     }
 }
+
+
+/**************************************************************************************/
+/************************************ABOUT ME*********************************/
+/**************************************************************************************/
+
+
+.about-me {
+    text-align: center;
+    color: white;
+}
+
+.about-me img {
+    border-radius: 100%;
+}
+
+.about-me h2 {
+    font-size: 32px;
+}
+
+.about-me h4 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content p {
+    padding: 50px 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.info {
+    padding-bottom: 25px;
+}
+
+.info a{
+    padding: 15px;
+    color: black;
+}
+
+.info a:hover{
+    color: white;
+}
+
